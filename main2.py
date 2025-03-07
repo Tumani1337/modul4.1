@@ -10,6 +10,5 @@ def check_triangle_exists(a:float ,b: float,c: float) -> None:
 
 def is_positive(a:float ,b: float,c: float) -> None:
 
-    while (a > 0 and b > 0 and c > 0):
-        print('Стороны треугольника должны быть положительными')
-        
+    if not(a > 0 and b > 0 and c > 0):
+        raise ValueError('Стороны треугольника должны быть положительными')
