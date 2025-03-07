@@ -28,3 +28,13 @@ def calculate_quadratic_equation(a:float,b:float,c:float) -> tuple[float,float] 
     else:
         return None
 
+def output_data(roots: tuple[float] or float or None) -> None:
+
+    if roots is None:
+        print("У уравнения нет корней")
+
+    elif isinstance(roots,tuple) and len(roots) == 2:
+        print(f"Корни уравнения: {roots[0]} и {roots[1]}")
+
+    elif isinstance(roots, float):
+        print(f"Единственный корень уравнения: {roots}")
