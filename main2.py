@@ -24,3 +24,9 @@ def input_data() -> tuple[float,float,float]:
 
 def calculating_half_meter(a:float ,b: float,c: float) -> float:
     return (a + b + c) / 2
+
+def calculating_area(a:float ,b: float,c: float) -> float:
+
+    p = calculating_half_meter(a,b,c)
+    S = math.sqrt(p*(p-a)*(p-b)*(p-c))
+    return S
