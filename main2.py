@@ -12,7 +12,4 @@ def is_positive(a:float ,b: float,c: float) -> None:
 
     while (a > 0 and b > 0 and c > 0):
         print('Стороны треугольника должны быть положительными')
-        a = float(input('a>> '))
-        b = float(input('b>> '))
-        c = float(input('c>> '))
-
+        
