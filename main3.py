@@ -30,3 +30,13 @@ def celsius_to_fahrenheit(celsius: float) -> float:
 
 def fahrenheit_to_celsius(fahrenheit: float) -> float:
     return (fahrenheit - 32) * 5 / 9
+
+def output_data(choice: int) -> None:
+
+    if choice == 1:
+        temperature = celsius_to_fahrenheit(input_temperature(choice))
+        print(f"Температура в градусах Фаренгейта: {temperature}")
+
+    elif choice == 2:
+        temperature = fahrenheit_to_celsius(input_temperature(choice))
+        print(f"Температура в градусах Цельсия: {temperature}")
