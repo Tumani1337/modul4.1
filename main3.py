@@ -40,3 +40,6 @@ def output_data(choice: int) -> None:
     elif choice == 2:
         temperature = fahrenheit_to_celsius(input_temperature(choice))
         print(f"Температура в градусах Цельсия: {temperature}")
+
+choice = input_choice()
+output_data(choice)
