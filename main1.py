@@ -13,5 +13,18 @@ def input_data() -> tuple[float,float,float]:
     b = float(input("b >>"))
     return a,b,c
 
+def calculate_quadratic_equation(a:float,b:float,c:float) -> tuple[float,float] or float or None:
+    discriminant = b * b - 4 * a * c
 
+    if discriminant > 0:
+        root1 = (-b + math.sqrt(discriminant)) / (2 * a)
+        root2 = (-b - math.sqrt(discriminant)) / (2 * a)
+        return root1, root2
+
+    elif discriminant == 0:
+        root = -b / (2 * a)
+        return root
+
+    else:
+        return None
 
