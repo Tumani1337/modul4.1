@@ -14,3 +14,13 @@ def input_choice() -> int:
     choice = check_correct_choice(choice)
 
     return choice
+
+def input_temperature(choice: int) -> float:
+
+    if choice == 1:
+        temperature = float(input("Введите температуру в градусах Цельсия: "))
+
+    elif choice == 2:
+        temperature = float(input("Введите температуру в градусах Фаренгейта: "))
+
+    return temperature
