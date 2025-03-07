@@ -1,7 +1,7 @@
 import math
 
 def check_zero_a(a: float) -> float:
-   if not a == 0:
+   if a == 0:
         raise ZeroDivisionError('Коэфицент "a" не должен быть = 0')
 
 
