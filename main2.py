@@ -22,3 +22,5 @@ def input_data() -> tuple[float,float,float]:
 
     return a,b,c
 
+def calculating_half_meter(a:float ,b: float,c: float) -> float:
+    return (a + b + c) / 2
