@@ -1,10 +1,9 @@
 import math
 
 def check_zero_a(a: float) -> float:
-    while a == 0:
-        print('Коэфицент а не должен быть = 0')
-        a = float(input("a >>"))
-    return a
+   if not a == 0:
+        raise ZeroDivisionError('Коэфицент "a" не должен быть = 0')
+
 
 def input_data() -> tuple[float,float,float]:
     print('Введите коэфиценты уравнения')
