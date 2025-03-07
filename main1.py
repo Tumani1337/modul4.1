@@ -7,6 +7,7 @@ def check_zero_a(a: float) -> float:
     return a
 
 def input_data() -> tuple[float,float,float]:
+    print('Введите коэфиценты уравнения')
     a = float(input("a >>"))
     a = check_zero_a(a)
     c = float(input("c >>"))
