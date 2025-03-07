@@ -30,3 +30,8 @@ def calculating_area(a:float ,b: float,c: float) -> float:
     p = calculating_half_meter(a,b,c)
     S = math.sqrt(p*(p-a)*(p-b)*(p-c))
     return S
+
+def output_data(S: float,sides:tuple[float,float,float]) -> None:
+    print(f"Площадь треугольника со сторонами {sides[0]}, {sides[1]},{sides[2]}, = {S} ")
+
+    
