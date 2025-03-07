@@ -35,4 +35,4 @@ def output_data(S: float,sides:tuple[float,float,float]) -> None:
     print(f"Площадь треугольника со сторонами {sides[0]}, {sides[1]},{sides[2]}, = {S} ")
 
 data = input_data()
-output_data(calculating_area(data),data)
+output_data(calculating_area(*data),data)
