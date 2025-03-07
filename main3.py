@@ -24,3 +24,6 @@ def input_temperature(choice: int) -> float:
         temperature = float(input("Введите температуру в градусах Фаренгейта: "))
 
     return temperature
+
+def celsius_to_fahrenheit(celsius: float) -> float:
+    return (celsius * 9 / 5) + 32
