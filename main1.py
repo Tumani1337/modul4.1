@@ -38,3 +38,7 @@ def output_data(roots: tuple[float] or float or None) -> None:
 
     elif isinstance(roots, float):
         print(f"Единственный корень уравнения: {roots}")
+
+roots = calculate_quadratic_equation(input_data())
+output_data(roots)
+
