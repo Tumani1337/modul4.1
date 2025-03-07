@@ -3,7 +3,8 @@ import math
 def check_zero_a(a: float) -> float:
    if a == 0:
         raise ZeroDivisionError('Коэфицент "a" не должен быть = 0')
-
+   else:
+       return a
 
 def input_data() -> tuple[float,float,float]:
     print('Введите коэфиценты уравнения')
